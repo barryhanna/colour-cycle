@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+:root {
+	--background-color: #2a2a30;
+	--text-colour: #fefdfc;
+	--primary-colour: #54bac9;
+	--secondary-colour: #3e626f;
+	--light-colour: #d8dcc7;
+	--padding: 10px;
+	--margin: 10px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* border: 1px solid crimson; */
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-colour);
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	display: block;
+	width: 100%;
+}
+
+h1 {
+	margin: var(--margin);
+	padding: var(--padding);
+	text-align: center;
+}
+
+.colour-box {
+	background-color: var(--light-colour);
+	border: 3px solid var(--secondary-colour);
+	height: 50vh;
+	width: 50vh;
+	border-radius: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.colour-controls {
+	align-items: baseline;
+	display: flex;
+	justify-content: space-between;
+	padding-top: var(--padding);
+}
+
+input[type='range'] {
+	-webkit-appearance: slider-vertical;
+	background-color: var(--primary-colour);
+	width: 1px;
+}
+
+#user-controls {
+	display: flex;
+	flex: 1 1 auto;
+	justify-content: space-between;
+	margin-top: var(--margin);
+	height: 50px;
+}
+
+button {
+	background-color: var(--secondary-colour);
+	border: none;
+	color: var(--text-colour);
+	width: 100%;
+	font-size: 2rem;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+input[type='text'] {
+	width: 100%;
+	margin: 0 25%;
+	font-size: 3rem;
+}

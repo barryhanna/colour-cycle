@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Colour Cycle</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Colour Cycle</h1>
+		<div class="row">
+			<div class="colour-box" id="colour-box">
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="colour-controls">
+				<input type="range" name="red1" id="red1" min="0" max="15" value="0">
+				<input type="range" name="red2" id="red2" min="0" max="15" value="0">
+				<input type="range" name="green1" id="green1" min="0" max="15" value="0">
+				<input type="range" name="green2" id="green2" min="0" max="15" value="0">
+				<input type="range" name="blue1" id="blue1" min="0" max="15" value="0">
+				<input type="range" name="blue2" id="blue2" min="0" max="15" value="0">
+			</div>
+		</div>
+		<div class="row" id="user-controls">
+			<input type="text" name="step" id="step">
+			<button id="btnBegin">Begin</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
